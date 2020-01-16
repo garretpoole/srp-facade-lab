@@ -1,9 +1,9 @@
 package srpfacadelab;
 
-public class DamageCalculator {
+public class HealthManager {
     RpgPlayer player;
 
-    DamageCalculator(RpgPlayer player) {
+    HealthManager(RpgPlayer player) {
         this.player = player;
     }
 

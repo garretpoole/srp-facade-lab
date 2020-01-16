@@ -1,13 +1,13 @@
 package srpfacadelab;
 
-public class RpgPlayerFacade {
+public class PlayerFacade {
     RpgPlayer player;
     public InventoryManager im = new InventoryManager(player);
-    public DamageCalculator dc = new DamageCalculator(player);
+    public HealthManager hm = new HealthManager(player);
     public RpgPlayerFacade() {}
 
     public void takeDamage(int Damage) {
-        dc.takeDamage(Damage, im);
+        hm.takeDamage(Damage, im);
     }
 
     public int calculateInventoryWeight() {
